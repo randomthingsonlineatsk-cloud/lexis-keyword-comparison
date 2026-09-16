@@ -38,13 +38,10 @@ leave the browser.
 ## Setup
 
 This app is built on [TanStack Start](https://tanstack.com/start) with
-[shadcn/ui](https://ui.shadcn.com) components and Tailwind CSS v4. The
-UI component library isn't duplicated file-by-file in this repo since it's
-standard, publicly-documented boilerplate — install it directly:
+[shadcn/ui](https://ui.shadcn.com) components and Tailwind CSS v4.
 
 ```bash
 npm install
-npx shadcn@latest add button checkbox collapsible input tabs textarea
 npm run dev
 ```
 
