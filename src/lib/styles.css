@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: 60 9% 97%;
+  --foreground: 210 12% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 12% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 12% 12%;
+  --primary: 210 12% 12%;
+  --primary-foreground: 60 9% 97%;
+  --secondary: 220 14% 95%;
+  --secondary-foreground: 210 12% 12%;
+  --muted: 220 14% 95%;
+  --muted-foreground: 220 9% 42%;
+  --accent: 205 51% 37%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 6 60% 52%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 60 5% 85%;
+  --input: 60 5% 85%;
+  --ring: 205 51% 37%;
+  --mark: 42 88% 64%;
+  --mark-foreground: 45 65% 12%;
+  --diff-a: 6 55% 55%;
+  --diff-b: 205 51% 37%;
+  --radius: 0.25rem;
+}
+
+.dark {
+  --background: 210 9% 10%;
+  --foreground: 210 10% 92%;
+  --card: 210 8% 14%;
+  --card-foreground: 210 10% 92%;
+  --popover: 210 8% 14%;
+  --popover-foreground: 210 10% 92%;
+  --primary: 210 10% 92%;
+  --primary-foreground: 210 9% 10%;
+  --secondary: 210 8% 19%;
+  --secondary-foreground: 210 10% 92%;
+  --muted: 210 8% 19%;
+  --muted-foreground: 210 8% 65%;
+  --accent: 205 55% 65%;
+  --accent-foreground: 205 55% 12%;
+  --destructive: 6 60% 62%;
+  --destructive-foreground: 6 30% 10%;
+  --border: 210 8% 23%;
+  --input: 210 8% 23%;
+  --ring: 205 55% 65%;
+  --mark: 42 88% 64%;
+  --mark-foreground: 45 65% 12%;
+  --diff-a: 6 65% 68%;
+  --diff-b: 205 55% 65%;
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-mark: hsl(var(--mark));
+  --color-mark-foreground: hsl(var(--mark-foreground));
+  --color-diff-a: hsl(var(--diff-a));
+  --color-diff-b: hsl(var(--diff-b));
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-sans);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+mark.hit {
+  background-color: hsl(var(--mark));
+  color: hsl(var(--mark-foreground));
+  border-radius: 2px;
+  padding: 0 1px;
+}
