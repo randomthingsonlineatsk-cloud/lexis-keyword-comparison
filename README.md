@@ -63,7 +63,16 @@ MIT — see LICENSE.
 
 ## Citation
 
-If you use Lexis in research, please cite this repository and, where
-relevant, the monograph it was originally developed to support: "Global
-Equity in Alzheimer's Disease and Cancer Clinical Research" (Zenodo, DOI to
-be added).
+If you use Lexis in research, please cite:
+
+Khan, G. S. F. A. (2026). *Lexis: A Browser-Based Tool for Keyword and
+Phrase Comparison Across Documents and Datasets* (Version v1.0) [Computer
+software]. Zenodo. https://doi.org/10.5281/zenodo.22804446
+
+Where relevant, please also cite the dataset and monograph it was
+originally developed to support:
+
+Khan, G. S. F. A. (2026). *Global Equity in Alzheimer's Disease and Cancer
+Clinical Research: Trial Representation Dataset, TREI-AC Scoring Code, and
+Supporting Documentation* [Data set]. Zenodo.
+https://doi.org/10.5281/zenodo.22799082
